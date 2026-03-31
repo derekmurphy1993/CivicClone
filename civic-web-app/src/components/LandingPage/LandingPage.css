@@ -1,0 +1,209 @@
+.LandingPage {
+  background-color: var(--primary-darkbackground);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.landingImageContainer {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.landingImage {
+  width: 100%;
+  height: 100%;
+}
+
+.landingImageSource {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 0.75em;
+  margin-right: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 8px black,
+    -2px -2px 8px black,
+    2px -2px 8px black,
+    -2px 2px 8px black;
+}
+
+@media (max-width: 1200px) {
+  .landingImageContainer {
+    height: 800px;
+    min-width: 0;
+  }
+  
+  .landingImage {
+    object-fit: cover;
+  }
+
+  .landingImageSource {
+    font-size: 0.6em;
+  }
+}
+
+@media (min-height: 850px) and (max-width: 1200px) {
+  .landingImageSource {
+    position: absolute;
+  }
+}
+
+.landingPageTitle {
+  color: white;
+  text-shadow: 0 0 1px var(--primary-darkbackground),
+    0 0 10px var(--primary-darkbackground);
+  font-size: 60px;
+  line-height: 64px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 30px;
+  width: 550px;
+  z-index: 2;
+  text-align: center;
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  .landingPageTitle {
+    font-size: 48px;
+    line-height: 52px;
+    width: 450px;
+  }
+}
+
+@media (min-width: 331px) and (max-width: 480px) {
+  .landingPageTitle {
+    font-size: 36px;
+    line-height: 40px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 330px) {
+  .landingPageTitle {
+    font-size: 30px;
+    line-height: 34px;
+    width: 300px;
+  }
+}
+
+#LandingModal, #LandingModalSkeleton {
+  background-color: rgb(10, 10, 10, 0.8);
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  min-width: 650px;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 2vw;
+  box-shadow: 20px 20px 31px -15px rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  #LandingModal, #LandingModalSkeleton {
+    min-width: 0;
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #LandingModal, #LandingModalSkeleton {
+    min-width: 0;
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+#landingModalTitle {
+  width: 100%;
+  text-align: left;
+  margin: 0 0 20px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+@media (min-width: 331px) and (max-width: 480px) {
+  #landingModalTitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  #landingModalTitle {
+    font-size: 18px;
+  }
+}
+
+#invalidSearch {
+  color: red;
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  margin: 0 0 5px 0;
+}
+
+#exploreMoreButton {
+  background-color: transparent;
+  color: white;
+  margin: 0 40px 5px 0;
+  border: none;
+  height: auto;
+  min-height: 60px;
+}
+
+#exploreMore {
+  font-size: 16px;
+  animation-name: play2;
+  animation-duration: .5s;
+}
+
+#exploreMore:hover {
+  cursor: pointer;
+  font-size: 18px;
+  animation-name: play;
+  animation-duration: .65s;
+  animation-timing-function: ease-in;
+}
+
+#searchButton {
+  width: 70%;
+  height: 6vh;
+  border-radius: 10px;
+  border: none;
+  font-size: large;
+  background-color: var(--primary-pressed);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: var(--primary-hover);
+}
+
+#searchButton p {
+  color: white;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+#searchButton:active {
+  background-color: lightblue;
+}
+
+@keyframes play {
+  from {font-size: medium;}
+  to {font-size: large;}
+}
+
+@keyframes play2 {
+  from {font-size: medium;}
+  to {font-size: large;}
+}

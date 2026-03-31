@@ -1,0 +1,5 @@
+#tagChip:hover {
+  cursor: pointer;
+  background-color: var(--primary-main);
+  color: var(--primary-darkestgray);
+}

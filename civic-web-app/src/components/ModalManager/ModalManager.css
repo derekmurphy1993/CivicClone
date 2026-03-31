@@ -1,0 +1,663 @@
+/* All modals. */
+.socialMedia button{
+  background-color: transparent;
+  border: none;
+  width: 75px;
+  height: 50px;
+}
+
+.socialMedia button:hover {
+  cursor: pointer;
+}
+
+.socialMedia button img {
+  width: 50px;
+  height: 50px;
+}
+
+.MuiBackdrop-root {
+  opacity: .5;
+}
+
+/* LoginModal. */
+.LoginModal {
+  /* positioning */
+  position: absolute;
+  left: 32%;
+  top: 10%;
+  width: 50%;
+  max-width: 650px;
+  height: 77%;
+  max-height: 550px;
+  z-index: 10;
+  padding-bottom: 25px;
+
+  /* styling */
+  background-color: var(--primary-surface);
+  border: 5px solid #6dc9c0a2;
+  -webkit-box-shadow: 5px 5px 2px -3px rgba(0, 0, 0, 0.116); 
+  box-shadow: 5px 5px 2px -3px rgba(0, 0, 0, 0.116);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#closeLoginModal {
+  background-color: transparent;
+  border: none;
+  font-size: larger;
+  font-weight: 100;
+  position: relative;
+  left: 300px;
+  top: 20px;
+}
+
+#closeLoginModal:hover {
+  cursor: pointer;
+}
+
+#closeLoginModal:active {
+  color: gray;
+}
+
+.LoginModal h1 {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+#Googleplay {
+  height: 152%;
+  width: 120%;
+}
+
+.LoginModal input {
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid var(--primary-border);
+  margin-right: 8px;
+  width: 45%;
+  padding-left: 15px;
+}
+
+#Subscribe {
+  background-color: var(--primary-main);
+  border: none;
+  border-radius: 7px;
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  box-shadow: 4px 6px 5px -3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 4px 6px 3px -3px rgba(0,0,0,0.075);
+}
+
+/* ThankYouModal. */
+.ThankYouModal {
+  /* positioning */
+  position: absolute;
+  left: 32%;
+  top: 30%;
+  z-index: 10;
+  width: 37%;
+  height: 27%;
+
+  /* style */
+  background-color: var(--primary-surface);
+  border: 5px solid #6dc9c0a2;
+  -webkit-box-shadow: 5px 5px 2px -3px rgba(0, 0, 0, 0.116); 
+  box-shadow: 5px 5px 2px -3px rgba(0, 0, 0, 0.116);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 45px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.ThankYouModal h4 {
+  font-weight: 500;
+}
+
+#closeTYModal {
+  /* positioning */
+  position: relative;
+  left: 245px;
+  top: -30px;
+  
+  /* styling */
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+/* ShareModal. */
+.ShareModal {
+  /* positioning */
+  position: fixed;
+  top: 15%;
+  left: 30%;
+  width: 32vw;
+  height: 52vh;
+  min-height: 350px;
+  max-height: 375px;
+  z-index: 10;
+  
+  /* styling */
+  background-color: var(--primary-surface);
+  border-radius: .7vw;
+  text-align: center;
+  padding: 3.5em;
+  border: 4px solid var(--primary-border);
+}
+
+#SMinnerDiv {
+  position: relative;
+  top: -4vh;
+}
+
+#SMinnerDiv > * {
+  text-align: left;
+}
+
+#smCloseBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0.2em;
+  top: 0.5em;
+}
+
+#smCloseBtn:hover {
+  cursor: pointer;
+}
+
+#smTitle {
+  display: block;
+  position: absolute;
+  font-size: large;
+  font-weight: 400;
+  width: 70%;
+  left: 6vw;
+  top: 4.5vh;
+}
+
+.ShareModal div img {
+  max-width: 6em;
+  max-height: 10em;
+  border-radius: 15px;
+  display: inline;
+}
+
+.ShareModal p {
+  display: inline;
+  position: relative;
+  top: -1em;
+  font-size: larger;
+  margin-left: 1.5vw;
+}
+
+.ShareModal form div {
+  margin-right: .7vw;
+}
+
+#copyBtn {
+  background-color: var(--primary-main);
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ShareModal .socialMedia {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ShareModal .socialMedia p {
+  font-weight: bold;
+  margin-left: .5em;
+}
+
+.ShareModal .socialMedia button {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.ShareModal .socialMedia button:hover {
+  background-color: rgba(128, 128, 128, 0.39);
+}
+
+/* AddToCalendarModal. */
+.AddToCalendarModal {
+  /* positioning */
+  position: absolute;
+  border-radius: .6vw;
+  z-index: 20;
+  left: 31%;
+  top: 20%;
+  height: 31vh;
+  width: 30vw;
+  
+  /* styling */
+  background-color: var(--primary-surface);
+  border: 4.5px solid var(--primary-border);
+  padding: 4%;
+}
+
+.AddToCalendarModal div img {
+  max-width: 6em;
+  max-height: 10em;
+  border-radius: .5vw;
+  display: inline;
+}
+
+.AddToCalendarModal div p {
+  display: inline;
+  position: relative;
+  left: 15px;
+  top: -5px;
+}
+
+.AddToCalendarModal div {
+  margin-bottom: 8%;
+}
+
+#atcCloseBtn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 34.5vw;
+  top: 2vh;
+  font-size: larger;
+}
+
+#atcTitle {
+  display: block;
+  position: absolute;
+  font-size: large;
+  font-weight: 400;
+  width: 70%;
+  left: 12vw;
+  top: 14vh;
+}
+
+#atcCloseBtn:hover {
+  cursor: pointer;
+}
+
+#atcBg button {
+width: 100%;
+border: 1px solid var(--primary-border);
+background-color: white;
+height: 4vh;
+font-size: large;
+text-align: left;
+}
+
+#atcBg button:nth-child(1) {
+  border-top-left-radius: .6vw .6vw;
+  border-top-right-radius: .6vw .6vw;
+  border-bottom: none;
+  
+}
+
+#atcBg button:nth-child(2) {
+  border-bottom: none;
+}
+
+#atcBg button:nth-child(3) {
+  border-bottom-left-radius: .6vw .6vw;
+  border-bottom-right-radius: .6vw .6vw;
+}
+
+#atcBg button span {
+  float: right;
+} 
+
+#atcBg button span svg {
+  font-size: small;
+}
+
+/* MobileFilterModal. */
+.MobileFilter {
+  /* positioning */
+  position: fixed;
+  min-width: 100vw;
+  top: 74px;
+  overflow: scroll;
+  z-index: 2;
+  
+  /* styling */
+  padding: 16px;
+  -webkit-box-shadow: 1px -6px 12px 8px rgba(0,0,0,0.46); 
+  box-shadow: 1px -6px 5px 5px rgba(0,0,0,0.46);
+  background-color: var(--primary-surface);
+}
+
+.MobileFilter {
+  /* positioning */
+  max-height: 90%;
+}
+
+.mobileFiltersCollection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 17px;
+}
+
+.mobileFiltersCollection fieldset {
+  border: none;
+  padding: 10px 0 25px 0;
+  margin-top: -15px;
+}
+
+.mobileFiltersCollection label {
+  text-decoration: underline;
+  font-size: 1.25em;
+}
+
+.dateRangeCheckbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid var(--primary-hover);
+  padding: 9px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  top: 7px;
+}
+
+.mobileFiltersCollection fieldset input:active, .mobileFiltersCollection fieldset input:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.mobileFiltersCollection fieldset input:checked {
+  background-color: white;
+  border: 1px solid var(--primary-hover);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+}
+
+.mobileFiltersCollection fieldset input:checked:after {
+  content: '\2713';
+  font-size: 28px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  color: black;
+}
+
+.mobileFilterButton {
+  background-color: white;
+  width: 48vw;
+  max-width: 200px;
+  height: 6vh;
+  border-radius: 10px;
+  border: 2px solid var(--primary-border);
+  margin-bottom: 15px;
+}
+
+.mobileFilterButton:nth-child(1) {
+  width: 52vw;
+  max-width: 220px;
+}
+
+/* prevent sub-elements from interfering with button click event */
+.mobileFilterButton > * {
+  pointer-events: none;
+}
+
+.mobileFilterButton p {
+  display: inline;
+  position: relative;
+  font-size: 1em;
+  font-weight: 400;
+  top: -4px;
+  left: 2px;
+}
+
+.mobileFilterButton svg {
+  position: relative;
+  top: 2px;
+  left: -1px;
+}
+
+.MobileFilter #closeButton {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  left: 250px;
+  z-index: 2;
+}
+
+.MobileFilter #closeButton svg {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 7vw;
+}
+
+#mobileFilterHeader {
+  height: 45px;
+}
+
+#mobileFilterHeader h2 {
+  display: inline;
+}
+
+#mobileFilterTypes {
+  margin-bottom: 3vh;
+}
+
+#mobileFilterTypes div {
+  display: inline-block;
+}
+
+#mobileFilterTypes button > * {
+  pointer-events: none;
+}
+
+#mobileFilterTypes button {
+  border: none;
+}
+
+#mobileFilterTypes button span {
+  margin-left: 1vw;
+  font-size: 1.5em;
+}
+
+#mobileFilterTypes .Mui-selected {
+  background-color: var(--primary-focus);
+}
+
+#mobileFilterTags {
+  padding-bottom: 2vh;
+}
+
+#mobileFilterTags input {
+  margin-bottom: 18px;
+  width: 86vw;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid var(--primary-border);
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.178); 
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.178);
+}
+
+#mobileFilterTagToggle {
+  width: 30vw;
+  min-width: 100px;
+  margin-bottom: 1.5vh;
+}
+
+@media only screen and (max-width: 800px) {
+  /* All modals. */
+  .socialMedia a {
+    display: inline-block;
+  }
+
+  .socialMedia a img {
+    width: 75%;
+    height: 95%;
+    display: inline;
+  }
+
+  /* LoginModal. */
+  .LoginModal {
+    position: fixed;
+    padding-bottom: 25px;
+    top: 18%;
+    left: 2%;
+    width: 90%;
+    height: 60%;
+    max-height: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  #closeLoginModal {
+    left: 140px;
+    top: 8px;
+  }
+
+  .LoginModal input{
+    display: block;
+    width: 80%;
+    position: relative;
+    left: 25px;
+    margin-bottom: 10px;
+  }
+
+  .LoginModal h1 {
+    font-size: 28px;
+    margin-top: 3vh;
+  }
+
+  .LoginModal h3 {
+    font-size: larger;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+
+  .LoginModal h4 {
+    font-size: larger;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .LoginModal a {
+    display: block;
+  }
+
+  .IconDisplay {
+    margin-top: -20px;
+  }
+
+  #Googleplay {
+    width: 160px;
+    height: 80px;
+    margin-top: -45px;
+    margin-bottom: 0;
+  }
+
+  /* ThankYouModal. */
+  .ThankYouModal {
+    width: 82%;
+    height: 35vh;
+    padding-top: 0;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    left: 4%;
+  }
+  
+  .ThankYouModal h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  #closeTYModal {
+    left: 40vw;
+    top: 0;
+  }
+
+  /* ShareModal. */
+
+  .ShareModal {
+    width: 94%;
+    height: 65vh;
+    left: 0;
+    padding: 2vw;
+    position: relative;
+    top: 25vh;
+    border-radius: 12px;
+    max-height: none;
+    animation: slideInShare .35s ease-in-out;
+  }
+
+  #SMinnerDiv {
+    position: relative;
+    top: 3vh;
+  }
+
+  #SMinnerDiv h2 {
+    font-size: large;
+    margin-bottom: 3vh;
+  }
+
+  #smTitle {
+    left: 30vw;
+    top: 4vh;
+  }
+
+  /* AddToCalendarModal. */
+  .AddToCalendarModal {
+    width: 94%;
+    height: 65vh;
+    left: 0;
+    padding: 4vw;
+    position: relative;
+    top: 30vh;
+    border-radius: 12px;
+    animation: slideInCalendar .35s ease-in-out;
+  }  
+
+  .AddToCalendarModal h2 {
+    font-size: large;
+    margin-bottom: 5vh;
+  }
+
+  #atcCloseBtn {
+    position: absolute;
+    left: 85vw;
+    top: 1vh;
+  }
+
+  #atcTitle {
+    left: 33vw;
+    top: 10vh;
+  }
+
+  #atcBg {
+    margin-top: 7vh;
+  }
+
+  #atcBg button {
+    height: 7vh;
+    border-width: 2px;
+    font-weight: 500;
+  }
+
+  #atcBg button:nth-child(1) {
+    /* background-color: rebeccapurple; */
+    border-top-left-radius: 4vw 4vw;
+    border-top-right-radius: 4vw 4vw;
+    
+  }
+
+  #atcBg button:nth-child(3) {
+    /* background-color: rebeccapurple; */
+    border-bottom-left-radius: 4vw 4vw;
+    border-bottom-right-radius: 4vw 4vw;
+    
+  }
+}

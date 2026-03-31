@@ -1,0 +1,218 @@
+#EventDetail {
+  box-sizing: border-box;
+  padding: 15px 30px;
+  height: calc(100vh - 66px);
+}
+
+@media (max-width: 800px) {
+  #EventDetail {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#EventDetail p, #EventDetail address {
+  font-size: 17px;
+  line-height: 1.4em;
+}
+
+@media (max-width: 480px) {
+  #EventDetail p, #EventDetail address {
+    font-size: 14px;
+  }
+
+  #EventDetail h2 {
+    font-size: 22px;
+  }
+}
+
+#seeOthersContainer {
+  padding: 0;
+}
+
+#seeOthers {
+  font-size: 1em;
+  color: black;
+  margin: 10px 0;
+}
+
+#seeOthersArrow {
+  font-size: 30px;
+}
+
+.eventDetailTitle {
+  padding: 0;
+}
+
+.eventDetailSubtitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hostUrl {
+  color: black;
+}
+
+#hostUrl:hover {
+  text-decoration: underline;
+}
+
+.eventDetailTitle h2, .eventDetailTitle p {
+  margin: 0 0 15px 0;
+}
+
+#eventDetailImageContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 3vw;
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.eventDetailImage {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#EventDetailInfo {
+  margin-top: 20px;
+}
+
+.eventDetailIconText {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#CalendarIcon {
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+}
+
+#CalendarIcon, #LinkIcon, #LocationIcon {
+  color: var(--primary-pressed);
+  margin-right: 15px;
+}
+
+.eventDetailDate p {
+  margin: 0;
+}
+
+#eventLink {
+  color: blue !important;
+  display: inline;
+}
+
+#eventLink a:link {
+  color: blue;
+}
+
+#eventLink {
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#LinkIcon {
+  width: 35px;
+  height: 35px;
+}
+
+#EventDetailDescription {
+  margin-bottom: 75px;
+  width: 100%;
+}
+
+#EventDetailDescription button {
+  float: right;
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#EventDetailDescription p {
+  overflow-wrap: break-word;
+}
+
+#categories {
+  font-size: 90%;
+}
+
+#LocationIcon {
+  width: 35px;
+  height: 35px;
+}
+
+#eventButtons {
+  margin: 10px 0;
+}
+
+@media (max-width: 800) {
+  #EventDetail {
+    padding: 2vw;
+    padding-bottom: 55px;
+    background-color: var(--primary-surface);
+  }
+
+  #eventDetailImageContainer {
+    padding: 0;
+    overflow: visible;
+    width: 100vw;
+    position: relative;
+    left: -4vw;
+  }
+  
+  .eventDetailImage {
+    width: 100vw;
+    border-radius: 0;
+    z-index: 2;
+  }
+
+  #EventDetail address {
+    width: 80vw;
+  }
+
+  #CalendarIcon {
+    left: 3vw;
+  }
+
+  #eventLinkContainer {
+    width: auto;
+  }
+
+  #eventLink {
+    left: 5vw;
+    width: 80vw;
+    top: -1.5vh;
+  }
+
+  #seeOthers {
+    margin: 3px 0 0 0;
+    padding: 0;
+  }
+
+  #seeOthersArrow  {
+    font-size: 15px;
+    position: relative;
+    top: -1px;
+  }
+
+  #calendarButton {
+    width: 48%;
+    font-size: 12px;
+  }
+
+  #calendarButton img {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    left: 4px;
+  }
+}

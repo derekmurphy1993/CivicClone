@@ -1,0 +1,21 @@
+#ShareButton {
+  display: flex;
+  height: 48px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#shareIcon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  #ShareButton {
+    height: 36px;
+    border-radius: 15px;
+    width: 90px;
+    min-width: 80px;
+  }
+}

@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-transform: none;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix blurred images on Chrome. */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+  img {
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+}
+
+/* Fix pixelated images on Safari. */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+  img {
+    image-rendering: unset !important;
+  }
+}}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 48px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height, or 123% */
+
+  letter-spacing: 0.01em;
+
+  color: #000000;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+
+  letter-spacing: 0.5px;
+
+  color: #000000;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

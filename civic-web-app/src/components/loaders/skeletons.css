@@ -1,0 +1,68 @@
+.SkeletonBoxContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.SkeletonBoxOuter {
+  margin-top: 65px;
+}
+
+#SkeletonTitle {
+  position: relative;
+  top: 16px;
+  left: 16px;
+}
+
+.DescriptionSkeleton {
+  margin-bottom: 30px;
+}
+
+.EventFiltersSkeleton {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: space-around;
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+}
+
+#SkeletonImg {
+  width: calc(100% + 32px);
+  display: inline-block;
+  border-bottom: 1px solid lightblue;
+  margin-left: 16px;
+  position: relative;
+  top: -3.5vh;
+}
+
+#eventSectionSkeleton {
+  position: relative;
+  top: 5vh;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.EventListItemSkeleton {
+  margin-bottom: 1vh;
+  height: 26vh;
+  /* background-color: aqua; */
+}
+
+#BtnSkeleton {
+  display: flex;
+  justify-content: end;
+  margin-right: 2vw;
+  margin-top: -15vh;
+}
+
+@media (max-width: 800px) {
+  #eventSectionSkeleton {
+   top: -23vh;
+   margin-left: 45vw; 
+  }
+  #BtnSkeleton {
+    margin-top: -19vh;
+  }
+}

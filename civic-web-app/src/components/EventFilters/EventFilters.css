@@ -1,0 +1,49 @@
+.EventFilters {
+  background-color: var(--primary-offwhite);
+  border-bottom: 1px solid var(--primary-lightgray);
+  box-sizing: border-box;
+  display: flex;
+  padding: 10px 30px 10px 20px;
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.filteredEventCount {
+  margin: 0;
+  font-size: 24px;
+}
+
+.clearText {
+  color: var(--primary-darkgray);
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.clearText:hover {
+  color: var(--primary-hover);
+  cursor: pointer;
+}
+
+.eventFilterTextInputs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.eventFilterDropdown {
+  background-color: white;
+  border-radius: 3;
+  height: 40px;
+  border: 1px solid var(--primary-main);
+}
+
+#availabilityFilterLabel {
+  top: -7px;
+}
+
+#tagFilterFormControl {
+  z-index: 10;
+}

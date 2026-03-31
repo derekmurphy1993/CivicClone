@@ -1,0 +1,20 @@
+.VirtualEventToggle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.VirtualEventToggle img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+#virtualToggleContents {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+  width: 184px;
+}

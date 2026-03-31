@@ -1,0 +1,10 @@
+.Sidebar {
+  width: 55vw;
+  max-width: 950px;
+}
+
+.Map {
+  width: 45vw;
+  min-width: calc(100vw - 950px);
+  flex-grow: 1
+}

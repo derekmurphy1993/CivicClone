@@ -1,0 +1,56 @@
+.EventTypeFilter {
+  min-height: 101px;
+}
+
+.eventTypeFilterTitle {
+  margin: 0;
+}
+
+.EventTypeDescriptions {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.EventTypeDescriptions h3 {
+  color: white;
+  text-align: center;
+}
+
+.EventTypeDescriptions p {
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  text-indent: 5em hanging;
+}
+
+.eventTypeOptions {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.EventTypeOption img:hover {
+  cursor: pointer;
+}
+
+.EventTypeFilter h2 {
+  display: block;
+  position: relative;
+}
+
+.eventTypeText {
+  overflow: wrap;
+}
+
+.eventTypeText p {
+  margin: 5px 0 0 0;
+  color: var(--primary-darkgray);
+  font-size: 14px;
+  line-height: 14px;
+}
+
+#selectedEventType {
+  border: 3px solid var(--primary-hover);
+}

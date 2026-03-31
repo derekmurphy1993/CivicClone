@@ -1,0 +1,107 @@
+.cardContent {
+  display: flex;
+  padding: 5px;
+}
+
+.closeEventCardButton {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 10px;
+  height: 10px;
+  width: 10px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary-main)
+}
+
+.closeEventCardButton:hover {
+  font-weight: bolder;
+  color: var(--primary-hover)
+}
+
+.cardText {
+  padding-right: 5px;
+  font-size: medium;
+}
+
+.cardText h3 {
+  margin-block-start: 0.5em;
+}
+.cardText #ShareButton {
+  margin-bottom: 0.5em;
+}
+
+.imageContainer {
+  border-radius: 20px;
+  border-top: 1px inset #e2e6f1ad;
+  border-left: 1px inset #e2e6f1ad;
+  border-bottom: 1px inset #c0c4cfab;
+  border-right: 1px inset #c0c4cfab;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 165px;
+  height: auto;
+}
+
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#viewMore {
+  font-size: small;
+  width: 100%;
+  height: 30%;
+  position: relative;
+  left: 4em;
+  margin-bottom: 5px;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 800px) {
+  .imageContainer {
+    border-radius: 20px;
+    border-top: 1px inset #e2e6f1ad;
+    border-left: 1px inset #e2e6f1ad;
+    border-bottom: 1px inset #c0c4cfab;
+    border-right: 1px inset #c0c4cfab;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  h3 {
+    margin-left: 8px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: normal;
+  }
+
+  .eventInfo p {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
+  }
+
+  #viewMore {
+    font-size: medium;
+    width: 70%;
+    height: 30%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  #viewMore p {
+    border-bottom: none;
+  }
+  
+  #viewMoreArrow {
+    top: none;
+    position: relative;
+  }
+}
